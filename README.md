@@ -10,10 +10,17 @@
 
 - `Python` v3.10 or higher
 - `CMake`
+- `Git` (optional)
 
 ## Running Instructions
 
 The instructions below are for Unix machines. To run on Windows, some modifications will be required.
+
+### Clone project
+```bash
+git clone git@github.com:denis240997/cpp-python-test-task.git
+cd cpp-python-test-task
+```
 
 ### Building source files
 ```bash
@@ -25,14 +32,14 @@ cd -
 ```
 
 ### Setup python environment
-```
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements-dev.txt
 ```
 
 ### Run tests
-```
+```bash
 pytest -v tests.py
 ```
 
